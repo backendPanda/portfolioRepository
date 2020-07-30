@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <style>
+            * {
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+            }
+            .all {
+              margin-left: 90px;
+              margin-right: 90px;
+              margin-top: 90px;
+            }
+            .heading {
+              margin-left: 30px;
+              margin-right: 20px;
+              text-align: center;
+            }
+            .date {
+              background-color: skyblue;
+              color: black;
+              width: 100%;
+              border-radius: 5px;
+              margin: auto;
+              margin-top: 10px;
+              font-size: large;
+              transition: 0, 3s;
+              display: inline-block;
+              cursor: pointer;
+            }
+            .active, .date:hover{
+                background-color: grey;
+            }
+            .date:after{
+                content: "\1F447";
+                margin: 98%;
+            }
+            .notes {
+              padding: 0px 20px;
+              margin-top: 10px;
+              background-color: #fff;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+            
+            /* MOBILE */
+      @media screen and (max-width: 768px) {
+        .all{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+    }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img class="image" src="./img/logo.jpg" alt="" />
+        <h4>my text</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./lessons.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="all">
+      <div class="heading">
+        <h2>&#9781;NOTES</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+          harum odio ducimus impedit.
+        </p>
+      </div>
+      <button class="date">
+        Day 1
+        <br />
+        Monday, 29th
+      </button>
+      <div class="notes">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eius
+          suscipit aperiam nam necessitatibus fugiat, deleniti excepturi
+          pariatur aliquam commodi impedit nobis assumenda. Laborum mollitia
+          maxime quibusdam, debitis iure explicabo repellat aut ratione
+          excepturi sunt ipsam sint, eum accusamus consectetur velit doloribus
+          eos atque sequi, optio accusantium beatae? Quaerat, rerum.
+        </p>
+      </div>
+      <button class="date">
+        Day 1
+        <br />
+        Monday, 29th
+      </button>
+      <div class="notes">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eius
+          suscipit aperiam nam necessitatibus fugiat, deleniti excepturi
+          pariatur aliquam commodi impedit nobis assumenda. Laborum mollitia
+          maxime quibusdam, debitis iure explicabo repellat aut ratione
+          excepturi sunt ipsam sint, eum accusamus consectetur velit doloribus
+          eos atque sequi, optio accusantium beatae? Quaerat, rerum.
+        </p>
+      </div>
+      <button class="date">
+        Day 1
+        <br />
+        Monday, 29th
+      </button>
+      <div class="notes">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eius
+          suscipit aperiam nam necessitatibus fugiat, deleniti excepturi
+          pariatur aliquam commodi impedit nobis assumenda. Laborum mollitia
+          maxime quibusdam, debitis iure explicabo repellat aut ratione
+          excepturi sunt ipsam sint, eum accusamus consectetur velit doloribus
+          eos atque sequi, optio accusantium beatae? Quaerat, rerum.
+        </p>
+      </div>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("date");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

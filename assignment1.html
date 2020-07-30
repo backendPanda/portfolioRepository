@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      form {
+        align-self: center;
+        background-color: rgb(207, 199, 199);
+        padding: 1%;
+      }
+      input {
+        width: 75%;
+        height: 4vh;
+        margin: 1% 1%;
+      }
+      label {
+        margin: 1% 1%;
+      }
+      select {
+        margin: 1%;
+        height: 4vh;
+        width: 15%;
+      }
+      textarea {
+        margin: 1% 1% 1%;
+      }
+      .submit {
+        background-color: green;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img class="image" src="./img/logo.jpg" alt="" />
+        <h4>my text</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./lessons.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <form action="">
+      <label for="firstName">First Name</label>
+      <br />
+      <input type="text" placeholder="Your first name.." />
+      <br />
+      <label for="lastName">Last Name</label>
+      <br />
+      <input type="text" placeholder="Your last name.." />
+      <br />
+      <label id="country" for="">Country</label>
+      <br />
+      <select name="" id="">
+        <option value="">Afghanistan</option>
+        <option value="">Iraq</option>
+        <option value="">Benin</option>
+        <option value="">Ghana</option>
+        <option value="">USA</option>
+      </select>
+      <br />
+      <label for="">Subject</label>
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="60"
+        rows="20"
+        placeholder="Write something.."
+      ></textarea>
+      <br />
+      <input class="submit" type="submit" />
+    </form>
+    <script src="./app.js"></script>
+  </body>
+</html>
