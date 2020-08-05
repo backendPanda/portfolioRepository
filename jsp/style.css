@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(90deg, aqua, forestgreen);
+  color: whitesmoke;
+  font-family: serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+header,
+form {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+border: none;
+padding: 0.5rem;
+/* outline: none; */
+/* min-height: 5vh; */
+font-size: 2rem;
+background: #ffffff;
+}
+/* form input{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: serif;
+  color: blueviolet;
+} */
+button{
+  cursor: pointer;
+  transition: ease-in 0.5s;
+  background-color:burlywood;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+form button:hover {
+  background: grey;
+}
+.toDoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toDoList {
+  min-width: 40%;
+  list-style: none;
+}
+.toDo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toDo li {
+  flex: 1;
+}
+.trash-Btn,
+.completeBtn {
+  /* background-color: #dacccc; */
+  background: red;
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  /* display: flex; */
+}
+.completeButton{
+    background: #57b657;
+}
+.toDoItem{
+    padding: 0rem 0.5rem;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}

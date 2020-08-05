@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      .button {
-        width: 80%;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    /> -->
   </head>
   <body>
     <nav>
@@ -17,19 +19,18 @@
         <img class="image" src="./img/logo.jpg" alt="" />
         <h4>my text</h4>
       </div>
-
       <ul class="nav-links">
         <li>
-          <a href="./index.html">HOME</a>
+          <a href="#">HOME</a>
         </li>
         <li>
           <a href="#">ABOUT</a>
         </li>
         <li>
-          <a href="projectLanding.html  ">PROJECTS</a>
+          <a href="../projectLanding.html">PROJECTS</a>
         </li>
         <li>
-          <a href="./assignment.html">ASSIGNMENTS</a>
+          <a href="../assignment.html">ASSIGNMENTS</a>
         </li>
         <li>
           <a href="./lessons.html">LESSONS</a>
@@ -42,15 +43,18 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <form action="./assignment1.html">
-      <input type="submit" value="Assignment #1" />
+    <header>To Do List</header>
+    <form>
+      <input type="text" class="toDoInput" />
+      <button class="toDoButton">
+        <i class="fas fa-plus-square"></i>
+      </button>
     </form>
-    <!-- <form action="./assignment2.html">
-        <input type="submit" value="assignment2">
-    </form>
-    <form action="./assignment3.html">
-        <input type="submit" value="assignment3">
-    </form> -->
-    <script src="./app.js"></script>
+    <div class="toDoContainer">
+      <ul class="toDoList"></ul>
+    </div>
+    <div>
+      <script src="./app.js"></script>
+    </div>
   </body>
 </html>
