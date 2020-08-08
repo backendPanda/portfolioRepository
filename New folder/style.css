@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.navbar-brand {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  color: lightcoral !important;
+}
+.nav-link {
+  font-size: 16px;
+  margin: 15px;
+  color: black !important;
+}
+.nav-link:hover {
+  color: blue !important;
+}
+.active .nav-link {
+  color: blue !important;
+}
+.menu-right-btn {
+  padding: 13px 46px;
+  margin-right: 4%;
+  background-color: transparent;
+  transition: all 300ms ease-in;
+}
+.menu-right-btn:hover {
+  color: white;
+  background-color: blue;
+}
+.site-content {
+  background-image: url(./img/flower-3140492_1920.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.site-title,
+.site-desc {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.site-title {
+  margin-top: 30%;
+  margin-bottom: 6%;
+  font-style: 50px;
+}
+.btns {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.site-desc {
+  font-size: 14px;
+  padding-left: 15%;
+}
+.site-btn1 {
+  margin-left: 30%;
+  background-color: black;
+  color: white;
+}
+.site-btn2 {
+  background-color: teal;
+}
+.site-btn1,
+.site-btn2 {
+  margin-top: 5%;
+  margin-bottom: 40%;
+}
+.section-1 .heading-1 {
+  margin-top: 8%;
+}
+.section-1 .heading-2 {
+  margin-bottom: 5%;
+}
+.section-1 .para-1 {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+.section-1 .card-text,
+.para-1 {
+  color: rgb(48, 63, 63);
+}
+.section-1 {
+  margin-bottom: 8%;
+}
+.card {
+  width: 20rem;
+}
+/* .card img{
+    width: 200px;
+    height: 200px;
+} */
+.section-2 .container-fluid {
+  background-image: url(./img/download.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-2 .heading-1 {
+  margin-top: 20%;
+  margin-bottom: 4%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 80%;
+  color: white;
+}
+.section-2 .para {
+  width: 80%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  margin-bottom: 7%;
+}
+.section-2 .btn {
+  margin-bottom: 15%;
+  width: 30%;
+  padding: 2% 5%;
+}
+.section-3 {
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+.section-3 i {
+  color: thistle;
+}
+.section-3 p {
+  color: black;
+}
+.section-4 {
+  margin-top: 1%;
+  background-image: linear-gradient(90deg, rgb(87, 87, 161) white);
+}
+.section-4 .row .col-md-7,
+.col-md-5 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.section-4 a {
+  color: blue;
+  font-size: 40px;
+  text-decoration: none;
+  text-emphasis: none;
+}
+.section-4 .para-1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 7%;
+    font-size: 20px;
+}
+.social i{
+    color: blue;
+}
